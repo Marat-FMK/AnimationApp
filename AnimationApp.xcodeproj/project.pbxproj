@@ -13,6 +13,7 @@
 		6C195E702C35C7F800DFBC85 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6C195E6F2C35C7F800DFBC85 /* Base */; };
 		6C195E722C35C7F900DFBC85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C195E712C35C7F900DFBC85 /* Assets.xcassets */; };
 		6C195E752C35C7F900DFBC85 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6C195E742C35C7F900DFBC85 /* Base */; };
+		6C195E812C35C9D000DFBC85 /* Extension + UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C195E802C35C9D000DFBC85 /* Extension + UIButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		6C195E712C35C7F900DFBC85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C195E742C35C7F900DFBC85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C195E762C35C7F900DFBC85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C195E802C35C9D000DFBC85 /* Extension + UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIButton.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,48 @@
 		6C195E672C35C7F800DFBC85 /* AnimationApp */ = {
 			isa = PBXGroup;
 			children = (
-				6C195E682C35C7F800DFBC85 /* AppDelegate.swift */,
-				6C195E6A2C35C7F800DFBC85 /* SceneDelegate.swift */,
-				6C195E6C2C35C7F800DFBC85 /* ViewController.swift */,
-				6C195E6E2C35C7F800DFBC85 /* Main.storyboard */,
-				6C195E712C35C7F900DFBC85 /* Assets.xcassets */,
-				6C195E732C35C7F900DFBC85 /* LaunchScreen.storyboard */,
-				6C195E762C35C7F900DFBC85 /* Info.plist */,
+				6C195E7C2C35C81D00DFBC85 /* App */,
+				6C195E7F2C35C8D000DFBC85 /* ViewControllers */,
+				6C195E7D2C35C87900DFBC85 /* Story Boards */,
+				6C195E7E2C35C8A500DFBC85 /* Resources */,
 			);
 			path = AnimationApp;
+			sourceTree = "<group>";
+		};
+		6C195E7C2C35C81D00DFBC85 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				6C195E682C35C7F800DFBC85 /* AppDelegate.swift */,
+				6C195E762C35C7F900DFBC85 /* Info.plist */,
+				6C195E6A2C35C7F800DFBC85 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		6C195E7D2C35C87900DFBC85 /* Story Boards */ = {
+			isa = PBXGroup;
+			children = (
+				6C195E732C35C7F900DFBC85 /* LaunchScreen.storyboard */,
+				6C195E6E2C35C7F800DFBC85 /* Main.storyboard */,
+				6C195E802C35C9D000DFBC85 /* Extension + UIButton.swift */,
+			);
+			path = "Story Boards";
+			sourceTree = "<group>";
+		};
+		6C195E7E2C35C8A500DFBC85 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6C195E712C35C7F900DFBC85 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6C195E7F2C35C8D000DFBC85 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6C195E6C2C35C7F800DFBC85 /* ViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +176,7 @@
 				6C195E6D2C35C7F800DFBC85 /* ViewController.swift in Sources */,
 				6C195E692C35C7F800DFBC85 /* AppDelegate.swift in Sources */,
 				6C195E6B2C35C7F800DFBC85 /* SceneDelegate.swift in Sources */,
+				6C195E812C35C9D000DFBC85 /* Extension + UIButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +330,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = D3BJGB736B;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AnimationApp/Info.plist;
+				INFOPLIST_FILE = AnimationApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -307,9 +343,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Swiftbook.AnimationApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -322,7 +362,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = D3BJGB736B;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AnimationApp/Info.plist;
+				INFOPLIST_FILE = AnimationApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -335,9 +375,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Swiftbook.AnimationApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
