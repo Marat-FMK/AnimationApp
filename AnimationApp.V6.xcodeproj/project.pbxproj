@@ -13,6 +13,8 @@
 		6C8B232B2C36C0E70001DAE2 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6C8B232A2C36C0E70001DAE2 /* Base */; };
 		6C8B232D2C36C0E80001DAE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C8B232C2C36C0E80001DAE2 /* Assets.xcassets */; };
 		6C8B23302C36C0E80001DAE2 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6C8B232F2C36C0E80001DAE2 /* Base */; };
+		6C8B23392C36C1200001DAE2 /* SpringAnimation in Frameworks */ = {isa = PBXBuildFile; productRef = 6C8B23382C36C1200001DAE2 /* SpringAnimation */; };
+		6C8B233B2C36C4770001DAE2 /* SpringAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8B233A2C36C4770001DAE2 /* SpringAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		6C8B232C2C36C0E80001DAE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C8B232F2C36C0E80001DAE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C8B23312C36C0E80001DAE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C8B233A2C36C4770001DAE2 /* SpringAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpringAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C8B23392C36C1200001DAE2 /* SpringAnimation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +63,7 @@
 				6C8B23232C36C0E70001DAE2 /* AppDelegate.swift */,
 				6C8B23252C36C0E70001DAE2 /* SceneDelegate.swift */,
 				6C8B23272C36C0E70001DAE2 /* ViewController.swift */,
+				6C8B233A2C36C4770001DAE2 /* SpringAnimation.swift */,
 				6C8B23292C36C0E70001DAE2 /* Main.storyboard */,
 				6C8B232C2C36C0E80001DAE2 /* Assets.xcassets */,
 				6C8B232E2C36C0E80001DAE2 /* LaunchScreen.storyboard */,
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = AnimationApp.V6;
+			packageProductDependencies = (
+				6C8B23382C36C1200001DAE2 /* SpringAnimation */,
+			);
 			productName = AnimationApp.V6;
 			productReference = 6C8B23202C36C0E70001DAE2 /* AnimationApp.V6.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 6C8B23172C36C0E70001DAE2;
+			packageReferences = (
+				6C8B23372C36C1200001DAE2 /* XCRemoteSwiftPackageReference "SpringAnimation" */,
+			);
 			productRefGroup = 6C8B23212C36C0E70001DAE2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -141,6 +152,7 @@
 				6C8B23282C36C0E70001DAE2 /* ViewController.swift in Sources */,
 				6C8B23242C36C0E70001DAE2 /* AppDelegate.swift in Sources */,
 				6C8B23262C36C0E70001DAE2 /* SceneDelegate.swift in Sources */,
+				6C8B233B2C36C4770001DAE2 /* SpringAnimation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +375,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6C8B23372C36C1200001DAE2 /* XCRemoteSwiftPackageReference "SpringAnimation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/LexDeBash/SpringAnimation.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6C8B23382C36C1200001DAE2 /* SpringAnimation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6C8B23372C36C1200001DAE2 /* XCRemoteSwiftPackageReference "SpringAnimation" */;
+			productName = SpringAnimation;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6C8B23182C36C0E70001DAE2 /* Project object */;
 }
